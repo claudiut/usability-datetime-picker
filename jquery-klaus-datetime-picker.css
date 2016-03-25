@@ -1,0 +1,49 @@
+.jquery-klaus-datetime-picker-instance {
+  color: #333;
+  cursor: default;
+  position: relative;
+}
+.jquery-klaus-datetime-picker-instance .wrapper {
+  display: inline-block;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+}
+
+.jquery-klaus-datetime-picker-instance.floating {
+  display: none;
+}
+.jquery-klaus-datetime-picker-instance.floating .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.jquery-klaus-datetime-picker-instance .weekday-name {
+  background-color: #444;
+  color: #fefefe;
+}
+
+.jquery-klaus-datetime-picker-instance table {
+  width: 100%;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.jquery-klaus-datetime-picker-instance td {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+.jquery-klaus-datetime-picker-instance .day:hover {
+  background-color: #00C9FF;
+}
+.jquery-klaus-datetime-picker-instance .day.selected {
+  background-color: #00C9FF;
+}
+
+.jquery-klaus-datetime-picker-instance .prev-month,
+.jquery-klaus-datetime-picker-instance .next-month {
+  text-decoration: none;
+}
