@@ -4,16 +4,53 @@
   <script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
   
   <script type="text/javascript" src="moment-with-locales.min.js"></script>
-  <script type="text/javascript" src="jquery-klaus-datetime-picker.js"></script>
+  <script type="text/javascript" src="usability-datetime-picker.js"></script>
   
-  <link type="text/css" rel="stylesheet" href="jquery-klaus-datetime-picker.css" />
+  <link type="text/css" rel="stylesheet" href="usability-datetime-picker.css" />
 </head>
 <body>
-  <br /><br /><br /><br />
-  <br /><br /><br /><br />
-  <div>test 2: <input type="text" class="jquery-klaus-datetime-picker" /></div>
-  <br /><br /><br /><br />
-  <div>Romana: <input type="text" class="jquery-klaus-datetime-picker" data-klaus-datetime-picker-locale="ro" data-klaus-datetime-picker-floating="false" /></div>
+  <h1>Full datetime picker</h1>
+  <div>
+    <input
+    type="text"
+    class="usability-datetime-picker"
+    data-usability-datetime-picker-locale="de"
+    data-usability-datetime-picker-format="DD MMMM YYYY HH:mm:ss"
+    data-usability-datetime-picker-select-time="true"
+    data-usability-datetime-picker-select-time-seconds="true">
+  </div>
   
+  <h1>Select only time (and hide seconds)</h1>
+  <div>
+    <input
+    type="text"
+    class="usability-datetime-picker"
+    data-usability-datetime-picker-format="DD-MMM-YYYY HH:mm"
+    data-usability-datetime-picker-select-only-time="true"
+    value="10-Aug-1997 13:34">
+  </div>
+  
+  <h1>Display inline (with default options)</h1>
+  <div>
+    <input
+    type="text"
+    class="usability-datetime-picker"
+    data-usability-datetime-picker-inline="true"
+    value="2 April 2017 14:05" />
+  </div>
+  
+  <div style="display:none">
+    <h1>Add hidden input with a value formatted with a different format</h1>
+    <div>
+      <input
+      type="text"
+      class="usability-datetime-picker"
+      data-usability-datetime-picker-format="DD/MM/YYYY HH:mm"
+      data-usability-datetime-picker-hidden-input="true"
+      data-usability-datetime-picker-hidden-input-format="YYYY-MM-DD 00:00:00"
+      data-usability-datetime-picker-locale="ro"
+      value="2/4/2017 15:02" />
+    </div>
+  </div>
 </body>
 </html>

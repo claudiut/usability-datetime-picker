@@ -1,0 +1,65 @@
+table.usability-dp-table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+table.usability-dp-table.floating-dp {
+  position: absolute;
+  z-index: 2000;
+}
+
+table.usability-dp-table td {
+  border-color: transparent;
+}
+table.usability-dp-table td.day-cell {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+table.usability-dp-table td.day-cell.current-day {
+  background-color: #606060;
+  border-color: #606060;
+  color: #fff;
+}
+
+table.usability-dp-table td.last-row-empty-cell { border-bottom: 1px solid #eee; }
+
+table.usability-dp-table .usability-dp-days td,
+table.usability-dp-table .usability-dp-day-names td {
+  cursor: default;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.usability-dp-table .usability-dp-day-names td {
+  background-color: #606060;
+  color: #fff;
+  border: 1px solid #606060;
+}
+
+table.usability-dp-table .usability-dp-prev-month {
+  float: left;
+}
+
+table.usability-dp-table .usability-dp-next-month {
+  float: right;
+}
+
+table.usability-dp-table .usability-dp-header,
+table.usability-dp-table .usability-dp-time {
+  text-align: center;
+  border-width: 0;
+}
+
+table.usability-dp-table .usability-dp-header td,
+table.usability-dp-table .usability-dp-time td {
+  padding: 3px 3px 4px 3px;
+}
+
+a.usability-dp-prev-month,
+a.usability-dp-next-month {
+  text-decoration: none;
+  color: #606060;
+}
