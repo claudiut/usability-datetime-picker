@@ -100,8 +100,8 @@ console.log(dpOptions);
           )
         )
         +
-        "<tr class='usability-dp-time'><td colspan='7'>" + timeArr.join(" : ") + "</td></tr>\
-      </table>";
+        (dpOptions.selectTime || dpOptions.selectOnlyTime ? "<tr class='usability-dp-time'><td colspan='7'>" + timeArr.join(" : ") + "</td></tr>" : '') +
+      "</table>";
 
       inputElem.parent().find(".usability-dp-table").remove();
       inputElem.parent().append(html);
@@ -198,7 +198,7 @@ console.log(dpOptions);
     
     var getDPOptions = function(inputElem) {
       var defaultOpts = {
-        format: 'D MMMM YYYY HH:mm'
+        format: 'D MMMM YYYY',
       }
       var opts = {};
       
