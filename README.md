@@ -1,10 +1,10 @@
 A multilanguage simple and useful jQuery datetime picker.
 
-<p><img src="usability-calendar-demo-default.gif"></p>
+<p><img src="img/usability-calendar-demo-default.gif"></p>
 
-<p><img src="usability-calendar-demo-with-time.gif"></p>
+<p><img src="img/usability-calendar-demo-with-time.gif"></p>
 
-<p><img src="usability-calendar-demo-only-time.gif"></p>
+<p><img src="img/usability-calendar-demo-only-time.gif"></p>
 
 # Usage
 - Add the "usability-datetime-picker" class to an input element and your ready to go.
