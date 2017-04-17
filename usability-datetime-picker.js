@@ -71,7 +71,6 @@
       var secondsHtml = "<select class='usability-dp-seconds'>" + getRangeArray(0, 59).map(function(second) {
         return "<option value='" + second + "' " + (second == momentObj.second() ? "selected='selected'" : "") + ">" + moment().second(second).format("ss") + "</option>";
       }).join("") + "</select>"
-console.log(dpOptions);
 
       var timeArr = [
         hoursHtml,
@@ -234,6 +233,9 @@ console.log(dpOptions);
       inputElem
       .off(".usabilityDatetimePicker")
       .on("focus.usabilityDatetimePicker keypress.usabilityDatetimePicker keyup.usabilityDatetimePicker", function() {
+        options.locale = options.locale || 'en';
+        moment.locale(options.locale);
+        
         var m = inputElem.val() ? moment(inputElem.val(), options.format) : moment();
         render(this, m, true);
       })

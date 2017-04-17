@@ -12,12 +12,12 @@ A multilanguage simple and useful jQuery datetime picker.
     data-usability-datetime-picker-locale="de"
     
 # List of Options
-  data-usability-datetime-picker-locale
-  data-usability-datetime-picker-format
-  data-usability-datetime-picker-inline
-  data-usability-datetime-picker-select-time
-  data-usability-datetime-picker-select-only-time
-  data-usability-datetime-picker-select-time-seconds
+- data-usability-datetime-picker-locale
+- data-usability-datetime-picker-format
+- data-usability-datetime-picker-inline
+- data-usability-datetime-picker-select-time
+- data-usability-datetime-picker-select-only-time
+- data-usability-datetime-picker-select-time-seconds
 
 # Licence
 usability-datetime-picker is freely distributable under the terms of the MIT license.
