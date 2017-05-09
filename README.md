@@ -19,5 +19,8 @@ A multilanguage simple and useful jQuery datetime picker.
 - data-usability-datetime-picker-select-only-time
 - data-usability-datetime-picker-select-time-seconds
 
+# Known Bugs
+- When the date picker is used in multiple languages on the same page, the datepicker used later encouters a bug and starts using the locale of the first one
+
 # Licence
 usability-datetime-picker is freely distributable under the terms of the MIT license.
